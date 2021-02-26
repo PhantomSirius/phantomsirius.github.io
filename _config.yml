@@ -174,3 +174,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+=======
+theme: jekyll-theme-slate
+>>>>>>> 922b6ba4f27ce1e6d4eeaacdfcae7abcaaa405a2
