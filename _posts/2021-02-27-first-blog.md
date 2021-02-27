@@ -1,7 +1,7 @@
 ---
 title: My first blog
 tags: personal
-article_header: Hello World
+article_header: 
   type: cover
   image:
     src: pic/2021-02-27/backgroud.jpg
