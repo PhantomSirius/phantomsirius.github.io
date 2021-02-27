@@ -1,27 +1,16 @@
-*~
-~*
-*.diff
-*.patch
-*.bak
-.DS_Store
-*.swp
-*.swo
-*.log
-*.log.*
+# hidden files
+.*
+!.github
 
-/.vscode/
+# jekyll cache
+_site
+vendor
 
-node_modules/
-.sass-cache/
-
-/.bundle/
-/vendor/bundle
+# rubygem
 *.gem
+# yard docs
+doc
 
-yarn.lock
+# npm dependencies
+node_modules
 package-lock.json
-Gemfile.lock
-
-_site/
-.jekyll-metadata
-.jekyll-cache/
