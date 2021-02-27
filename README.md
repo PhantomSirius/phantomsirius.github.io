@@ -1,27 +1,36 @@
-# Fresh
+# Jekyll-Uno with Projects as Timeline
+A Jekyll Theme, based on the Uno-Theme with a list of projects as Timeline.
 
-A personal theme with a blog for Stackbit. [Live Demo](https://themes.stackbit.com/demos/fresh)
+## How does is look
+[Demo](http://thomas.zuehlke.family/)
+![Screenshot](screenshot-overview.png)
+![jekyll-theme-desktop](https://user-images.githubusercontent.com/32843441/72224870-5451ff00-357f-11ea-8fc2-bfbd4499bc63.gif)
+![jekyll-theme-mobil](https://user-images.githubusercontent.com/32843441/72224877-6a5fbf80-357f-11ea-920b-dfae72bf2fbe.gif)
 
-Click the button below to use this theme in Gatsby, Hugo or Jekyll via the Stackbit site builder:
+## Installation/Setup
+1. Download or clone repo `git clone https://github.com/tzuehlke/jekyll-uno-timeline.git`
+2. Enter the folder: `cd jekyll-uno-timeline/`
+3. Build it: `jekyll build`
+4. Start Jekyll server: `jekyll serve`
+5. Configure: `_config.yml`
+   * at least set `font_awesome` or download and add the font in `head.html`
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/stackbithq/stackbit-theme-fresh)
+Access via: [http://localhost:4000/](http://localhost:4000/)
 
-### About Stackbit
-
-[Stackbit](https://www.stackbit.com/) enables features like inline content editing, live previews and collaboration tools for Jamstack sites.
-
-## Working with This Theme
-
-This theme is written in Unibit. Themes written in Unibit can be converted to other static sites generators (SSG) such as Gatsby, Hugo, Jekyll and Next.js using [Stackbit Site Builder](https://app.stackbit.com/create?theme=https://github.com/stackbithq/stackbit-theme-fresh). The site builder will generate the SSG-specific version of this theme and push it to your own GitHub repository. You are free to use and modify the generated source however you wish.
-
-<img src="https://assets.stackbit.com/images/unibit-diagram.png" width="600" />
-
-### Editing This Theme
-
-While we recommend using the [site builder](https://app.stackbit.com/create?theme=https://github.com/stackbithq/stackbit-theme-fresh) to generate a version of the theme for any of the supported static site generators, you can develop locally using the Unibit CLI.  For details on how to install and use Unibit, visit the [documentation](https://docs.stackbit.com/site-builder/unibit/).
-
-### Develop Using CodeSandbox
-
-You can also develop this theme in the browser using Unibit via CodeSandbox.
-
-[Fork in CodeSandbox](https://codesandbox.io/s/github/stackbithq/stackbit-theme-fresh)
+## Details/Features/Changes
+* based on the [Uno-Theme](https://github.com/joshgerdes/jekyll-uno), but:
+  * removed everything with posts
+  * `content-wrapper` can be shown or hidden with button
+  * changed all icons to [Font-Awesome](https://fontawesome.com/)
+  * updated google-analytics snipped
+  * added [Meetup-Link](https://www.meetup.com/)
+  * removed RSS
+  * removed Disqus
+  * using a Timeline-Design instead of posts, therefore no pagination anymore
+* using Timeline ([CSS](https://github.com/le4ker/personal-jekyll-theme/blob/master/css/timeline.scss), [HTML](https://github.com/le4ker/personal-jekyll-theme/blob/master/_includes/timeline.html) ) from [{ Personal } Jekyll Theme](https://github.com/le4ker/personal-jekyll-theme) for a list of projects, but:
+  * still with 3 layouts for different screen-width, but without images on small screens
+  * timeline information source is now `_data/projects.yaml`
+  * always using the `timeline-inverted`-class, for text on the right side of the images
+* using [github_api.js](https://github.com/jarrekk/Jalpc/blob/master/static/js/github_api.js) from [Jalpc.](https://github.com/jarrekk/Jalpc), but:
+  * changed the GitHub-URL for using with persons and organisations
+  * added watchers number
