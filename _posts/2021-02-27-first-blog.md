@@ -4,7 +4,7 @@ tags: personal
 article_header:
   type: cover
   image:
-    src: /screenshot.jpg
+    src: pic/2021-02-27/backgroud.jpg
 ---
 This is my first blog.
 
