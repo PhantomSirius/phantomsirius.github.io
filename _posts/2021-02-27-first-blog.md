@@ -1,10 +1,10 @@
 ---
-title: My fist blog
+title: My first blog
 tags: personal
-article_header:
+article_header: Hello World
   type: cover
-  image:
-    src: pic/2021-02-27/backgroud.jpg
+  image: pic/2021-02-27/backgroud.jpg
+    src:
 ---
 This is my first blog.
 
