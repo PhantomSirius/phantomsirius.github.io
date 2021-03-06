@@ -5,25 +5,25 @@ date: 2019-08-08 11:33:00 +0800
 categories: [Blogging, Demo]
 tags: [typography]
 math: true
-mermaid: true
-image:
-  src: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/devices-mockup.png
+image: /assets/img/sample/devices-mockup.png
 ---
 
 This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
 
 
 ## Titles
+
 ---
-# H1 - heading
 
-<h2 data-toc-skip>H2 - heading</h2>
+# H1
 
-<h3 data-toc-skip>H3 - heading</h3>
+<h2 data-toc-skip>H2</h2>
 
-<h4>H4 - heading</h4>
+<h3 data-toc-skip>H3</h3>
+
+<h4>H4</h4>
+
 ---
-<br>
 
 ## Paragraph
 
@@ -39,38 +39,21 @@ Beside the lake, beneath the trees,
 
 Fluttering and dancing in the breeze.
 
-## Lists
+## List
 
 ### Ordered list
 
-1. Firstly
-2. Secondly
-3. Thirdly
+1. first item
+2. second item
+3. third item
 
 ### Unordered list
 
-- Chapter
-	- Setcion
-      - Paragraph
+- item 1
+	- sub item 1
+	- sub item 2
 
-### Task list
-
-- [ ] TODO
-- [x] Completed
-- Hold on
-- [ ] Defeat COVID-19
-  - [x] Vaccine production
-  - [ ] Economic recovery
-  - [ ] People smile again
-
-### Description list
-
-Sun
-: the star around which the earth orbits
-
-Moon
-: the natural satellite of the earth, visible by reflected light from the sun
-
+- item 2
 
 ## Block Quote
 
@@ -78,68 +61,53 @@ Moon
 
 ## Tables
 
-| Company                      | Contact          | Country |
+| Company                      | contact          | Country |
 |:-----------------------------|:-----------------|--------:|
 | Alfreds Futterkiste          | Maria Anders     | Germany |
 | Island Trading               | Helen Bennett    | UK      |
 | Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
 
-## Links
+## Link
 
 <http://127.0.0.1:4000>
 
 
 ## Footnote
 
-Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
+Click the hook will locate the footnote[^footnote].
 
 
 ## Images
 
-- Default (with caption)
+By default, the image is centered and the image caption can be displayed at the bottom:
 
-![Desktop View](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190808/mockup.png)
+![Desktop View](/assets/img/sample/mockup.png)
 _Full screen width and center alignment_
 
-<br>
+You can change the size of the picture:
 
-- Specify width
-
-![Desktop View](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190808/mockup.png){: width="400"}
+![Desktop View](/assets/img/sample/mockup.png){: width="400"}
 _400px image width_
 
-<br>
+In addition, you can use class `normal` , `left` and `right` to specify the image position (but in these case, the image caption is prohibited), for example:
 
-- Left aligned
+- Normal position
+  
+  ![Desktop View](/assets/img/sample/mockup.png){: width="350" class="normal"}
 
-![Desktop View](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190808/mockup.png){: width="350" .normal}
+- Float to the left
 
-<br>
-
-- Float to left
-
-  ![Desktop View](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190808/mockup.png){: width="240" .left}
+  ![Desktop View](/assets/img/sample/mockup.png){: width="240" class="left"}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
-<br>
+- Float to the right
 
-- Float to right
-
-  ![Desktop View](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190808/mockup.png){: width="240" .right}
+  ![Desktop View](/assets/img/sample/mockup.png){: width="240" class="right"}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
-<br>
+## Inline code
 
-## Mermaid SVG
-
-```mermaid
- gantt
-  title  Adding GANTT diagram functionality to mermaid
-  apple :a, 2017-07-20, 1w
-  banana :crit, b, 2017-07-23, 1d
-  cherry :active, c, after b a, 1d
-```
-
+This is an example of `Inline Code`.
 
 ## Mathematics
 
@@ -151,13 +119,7 @@ When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they 
 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
-
-## Inline code
-
-This is an example of `Inline Code`.
-
-
-## Code block
+## Code Snippet
 
 ### Common
 
@@ -170,6 +132,14 @@ This is a common code snippet, without syntax highlight and line number.
 #### Console
 
 ```console
+$ date
+Sun Nov  3 15:11:12 CST 2019
+```
+
+
+#### Terminal
+
+```terminal
 $ env |grep SHELL
 SHELL=/usr/local/bin/bash
 PYENV_SHELL=bash
@@ -203,18 +173,38 @@ fi;
 ```
 {% endraw %}
 
-#### Java
+#### HTML
 
-```java
-private void writeObject(java.io.ObjectOutputStream s)
-  throws java.io.IOException {
-  // Write out any hidden serialization magic
-  s.defaultWriteObject();
-  for (E e: map.keySet()) s.writeObject(e);
-}
+```html
+<div class="sidenav">
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
 ```
+
+**Horizontal Scrolling**
+
+```html
+<div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading" id="{{ category_name }}">
+      <i class="far fa-folder"></i>
+      <p>This is a very long long long long long long long long long long long long long long long long long long long long long line.</p>
+      </a>
+    </div>
+  </div>
+</div>
+```
+
 
 ## Reverse Footnote
 
-[^footnote]: The footnote source
-[^fn-nth-2]: The 2nd footnote source
+[^footnote]: The footnote source.

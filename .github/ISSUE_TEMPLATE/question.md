@@ -4,7 +4,7 @@ about: Ask what ever you want
 labels: question
 ---
 
-<!-- NOTE: Please maintain all sections, otherwise the issue will be automatically closed :) -->
+<!-- Note: Please follow the template to open a new issue, otherwise your question will probably be ignored. -->
 
 ## Checklist
 
@@ -15,5 +15,6 @@ labels: question
 - [ ] I searched the Internet for related problems, but still couldn't solve it.
 - [ ] My question is based on the latest code of `master` branch.
 
+
 ## Description
-<!-- Please describe your question in detial. -->
+<!-- Please describe your question. -->
